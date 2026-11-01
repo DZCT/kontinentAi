@@ -1,0 +1,5 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "messages": [{"role": "user", "content": "سلام، یک جمله پاسخ بده"}],
+  "max_tokens": 512
+}

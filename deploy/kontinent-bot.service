@@ -1,0 +1,23 @@
+[Unit]
+Description=Personal KontinentAI Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=kontinent
+Group=kontinent
+WorkingDirectory=/opt/kontinent-bot
+EnvironmentFile=/opt/kontinent-bot/.env
+ExecStart=/opt/kontinent-bot/.venv/bin/python /opt/kontinent-bot/bot.py
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/kontinent-bot/data
+
+[Install]
+WantedBy=multi-user.target

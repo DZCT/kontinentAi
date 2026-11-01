@@ -1,0 +1,31 @@
+# Credentials: only the example belongs in Git
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Conversations and usage
+/data/
+*.db
+*.db-*
+*.sqlite*
+# Environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# Private exports, archives, logs and backups
+/backups/
+/exports/
+conversation*.json
+api-response*.json
+*.log
+*.zip
+*.tar
+*.tar.gz
+*.bak
+.DS_Store
